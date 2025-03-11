@@ -1,7 +1,63 @@
 h1 {
-    color: blue;
+    color: rgb(0, 209, 63);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifs;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.container {
+    background-color: rgb(43, 43, 43);
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: 10px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    text-align: center;
 }
 
 p {
-    color: red;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+
+.black-bg {
+    background-color: black;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.marquee-container {
+    width: calc(100% - 400px);
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+}
+
+.marquee-text {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(105, 255, 150);
+    text-shadow: 0 0 5px rgb(0, 209, 63), 0 0 10px rgb(0, 209, 63), 0 0 20px rgb(0, 209, 63);
+    animation: marquee 10s linear infinite;
+    position: relative;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
